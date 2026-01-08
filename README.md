@@ -113,7 +113,7 @@ Ques 5. Deployment
 -> The project is deployed on Vercel and connected directly to the GitHub repository.
 
 
-Live URL:
+Live URL: https://smart-issue-board-navy.vercel.app/
 
 
 GitHub Repository
