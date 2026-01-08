@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Issue Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container dashboard">
+
+    <h2>Smart Issue Board</h2>
+    <p id="userEmail"></p>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+    <hr>
+
+    <h3>Create Issue</h3>
+
+    <input id="title" placeholder="Issue Title">
+    <input id="description" placeholder="Issue Description">
+
+    <select id="priority">
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+
+    <input id="assignedTo" placeholder="Assign to (email)">
+
+    <button onclick="addIssue()">Add Issue</button>
+
+    <hr>
+
+    <h3>Filters</h3>
+    <select id="filterStatus" onchange="loadIssues()">
+      <option value="">All Status</option>
+      <option>Open</option>
+      <option>In Progress</option>
+      <option>Done</option>
+    </select>
+
+    <select id="filterPriority" onchange="loadIssues()">
+      <option value="">All Priority</option>
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+
+    <h3>Issues</h3>
+    <div id="issues"></div>
+
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
