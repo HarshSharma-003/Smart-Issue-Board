@@ -116,4 +116,3 @@ Ques 5. Deployment
 Live URL: https://smart-issue-board-navy.vercel.app/
 
 
-GitHub Repository
