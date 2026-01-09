@@ -1,0 +1,121 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.dashboard {
+  max-width: 800px;
+}
+
+
+h2, h3 {
+  text-align: center;
+  color: #1e293b;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37,99,235,0.3);
+}
+
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+
+.logout-btn {
+  background-color: #dc2626;
+}
+
+.logout-btn:hover {
+  background-color: #991b1b;
+}
+
+/* issue card  */
+.issue-card {
+  border: 1px solid #90c1fe;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background: #f8fafc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.issue-card b {
+  color: #1e293b;
+  font-size: 16px;
+}
+
+.issue-card select {
+  width: auto;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+ /* Delete button inside issue card  */
+.issue-card button {
+  width: auto;
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: #ef4444;
+}
+
+.issue-card button:hover {
+  background-color: #b91c1c;
+}
+
+
+hr {
+  border: none;
+  border-top: 1px solid #cbd5e1;
+  margin: 20px 0;
+}
+
+p#userEmail {
+  text-align: center;
+  color: #475569;
+  font-weight: bold;
+}
